@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Ezra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inline custom navbar styles -->
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      position: relative;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-6">
+
+  <!-- 🌐 Navigation Bar -->
+  <nav>
+    <h1 class="text-xl font-bold text-cyan-400">Ezra Korgoren</h1>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <!-- 🌐 External Profile Links -->
+      <a href="https://www.linkedin.com/in/ezra-ngetich-63b492319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+      <a href="https://github.com/korgoren1" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- 📬 Contact Form Section -->
+  <div class="flex items-center justify-center mt-10">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-3xl font-bold mb-6 text-cyan-400 text-center">Contact Me</h2>
+      
+      <!-- 📩 Form using Formspree -->
+      <form action="https://formspree.io/f/myzpbolq" method="POST">
+        <!-- Name Field -->
+        <div class="mb-4">
+          <label for="name" class="block text-sm mb-1">Name</label>
+          <input type="text" name="name" id="name" required 
+                 class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"/>
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-4">
+          <label for="email" class="block text-sm mb-1">Email</label>
+          <input type="email" name="email" id="email" required 
+                 class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"/>
+        </div>
+
+        <!-- Message Field -->
+        <div class="mb-6">
+          <label for="message" class="block text-sm mb-1">Message</label>
+          <textarea name="message" id="message" rows="4" required 
+                    class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-cyan-400 text-black font-semibold py-2 rounded hover:bg-cyan-300 transition duration-200">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ezra Korgoren | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      scroll-behavior: smooth;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #00ffff;
+    }
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00ffff;
+    }
+    .hero h2 {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: #fff;
+    }
+    .hero p {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      max-width: 600px;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .buttons a {
+      padding: 0.8rem 1.5rem;
+      background: #00ffff;
+      color: #000;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #00bcd4;
+    }
+    .socials {
+      margin-top: 3rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .socials a:hover {
+      transform: scale(1.2);
+      color: #00ffff;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #000;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+    window.onload = () => {
+      document.querySelector(".hero").classList.add("animate");
+    };
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="logo"><strong>EZRA</strong></div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Hello, I'm Ezra Korgoren</h1>
+    <h2>Web Developer | IT Enthusiast</h2>
+    <p>Welcome to my personal portfolio. I build dynamic, responsive, and impactful websites and apps with creativity and passion.</p>
+    
+    <div class="buttons">
+      <a href="about.html">More About Me</a>
+      <a href="project.html">My Projects</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/korgoren1" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ezra-ngetich-63b492319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ezra Korgoren. All Rights Reserved.
+  </footer>
+</body>
+</html>

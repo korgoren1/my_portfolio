@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Ezra Korgoren</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-cyan-400">Ezra Korgoren</h1>
+    <div class="space-x-4">
+      <a href="home.html" class="hover:text-cyan-400">Home</a>
+      <a href="about.html" class="hover:text-cyan-400">About</a>
+      <a href="project.html" class="text-cyan-400 font-semibold">Projects</a>
+      <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-semibold text-cyan-400 mb-6">My Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="mb-8 border-b border-gray-700 pb-4">
+      <h3 class="text-xl text-cyan-300 font-bold">💼 Loan Tracer App</h3>
+      <p class="text-gray-300">
+        A smart loan tracking web app designed to manage client loans, payment history, and balances in real-time. 
+        Built with HTML, CSS, JS, and pure logic — intuitive UI, summaries, and search features included.
+      </p>
+      <p class="text-sm mt-2 text-gray-500 italic">Features: Payment breakdown, client search, editable entries, and more.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="mb-8 border-b border-gray-700 pb-4">
+      <h3 class="text-xl text-cyan-300 font-bold">🗳️ UOE Opinion Poll System</h3>
+      <p class="text-gray-300">
+        A campus-based polling system built to gather student opinions, votes, and feedback securely and anonymously. 
+        Ideal for student leadership surveys or academic polling at the University of Eldoret.
+      </p>
+      <p class="text-sm mt-2 text-gray-500 italic">Built for UOE — flexible, transparent, and mobile-friendly.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="mb-8 border-b border-gray-700 pb-4">
+      <h3 class="text-xl text-cyan-300 font-bold">👤 Bio Web</h3>
+      <p class="text-gray-300">
+        A professional online biography page to showcase my background, story, achievements, and timeline — all in one place.
+      </p>
+      <p class="text-sm mt-2 text-gray-500 italic">HTML/CSS/JS | Scroll-based timeline | Responsive layout</p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="mb-8 border-b border-gray-700 pb-4">
+      <h3 class="text-xl text-cyan-300 font-bold">🌍 Wasifu Web</h3>
+      <p class="text-gray-300">
+        A Swahili-flavored online identity profile site — built to be bold, expressive, and engaging for a public or cultural-facing bio.
+      </p>
+      <p class="text-sm mt-2 text-gray-500 italic">Bilingual support | Interactive features | Clean dark theme</p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="mb-8 border-b border-gray-700 pb-4">
+      <h3 class="text-xl text-cyan-300 font-bold">🛖 Kipsigis Heritage Hub</h3>
+      <p class="text-gray-300">
+        A timeless tribute website to preserve and showcase the culture, history, stories, and values of the Kipsigis people. 
+        Blending tradition with modern design — it features articles, timelines, audio, and interactive visuals.
+      </p>
+      <p class="text-sm mt-2 text-gray-500 italic">Multimedia web project | Cultural storytelling | Timeline + Audio + Maps</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 text-gray-500 text-sm">
+    &copy; <span id="year"></span> Ezra Korgoren. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Ezra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #00ffe1;
+    }
+
+    header a {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .about-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-header h1 {
+      font-size: 3em;
+      color: #00ffe1;
+    }
+
+    .about-header p {
+      font-size: 1.2em;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #00bcd4;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      border-left: 4px solid #00bcd4;
+      padding-left: 12px;
+    }
+
+    .section p {
+      margin-bottom: 12px;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .info-column {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .info-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-column li {
+      margin-bottom: 10px;
+      color: #ddd;
+    }
+
+    .highlight {
+      color: #00ffe1;
+      font-weight: bold;
+    }
+
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      background: #111;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 2.2em;
+      }
+
+      .info {
+        flex-direction: column;
+      }
+
+      .section h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="home.html">&larr; Back to Home</a>
+  </header>
+
+  <div class="about-container">
+    <div class="about-header">
+      <h1>Ezra Kiprono Ngetich</h1>
+      <p>IT Student • Aspiring Software Developer • Passionate Problem Solver</p>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m <span class="highlight">Ezra Kiprono Ngetich</span>, a highly motivated and creative individual currently pursuing a Bachelor of Science in Information Technology at the University of Eldoret.
+        I am deeply passionate about <span class="highlight">web development</span>, <span class="highlight">software engineering</span>, and solving real-world problems with code.
+      </p>
+      <p>
+        I enjoy building intuitive and impactful digital experiences, and I'm constantly exploring new technologies. My core interests revolve around <span class="highlight">frontend design</span>,
+        <span class="highlight">backend logic</span>, and <span class="highlight">user-centered applications</span>.
+      </p>
+    </div>
+
+    <div class="section info">
+      <div class="info-column">
+        <h2>Personal Info</h2>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:ezra.kiprono.ngetich@gmail.com">ezra.kiprono.ngetich@gmail.com</a></li>
+          <li><strong>Phone:</strong> +254 718 441 217</li>
+          <li><strong>Location:</strong> Eldoret, Kenya</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/korgoren1" target="_blank">github.com/korgoren1</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ezra-ngetich-63b492319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/ezra-korgoren</a></li>
+        </ul>
+      </div>
+
+      <div class="info-column">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>University of Eldoret</strong><br>
+          Bachelor of Science in Information Technology<br>
+          Currently Ongoing</li>
+          <li><strong>Olorukoti Secondary School</strong><br>
+          Kenya Certificate of Secondary Education (KCSE)</li>
+          <li><strong>Lelbarak Primary School</strong><br>
+          Kenya Certificate of Primary Education (KCPE)</li>
+          <li><strong>Kataret Primary School</strong><br>
+          Early Education</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills & Interests</h2>
+      <p>
+        <span class="highlight">Languages & Tools:</span> Python, HTML, CSS, JavaScript, Git, Linux, Django (basic)
+      </p>
+      <p>
+        <span class="highlight">Interests:</span> Software Development, Web Technologies, Creative Coding, Problem Solving, UI/UX Design
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Ezra Korgoren — All Rights Reserved.
+  </footer>
+</body>
+</html>
